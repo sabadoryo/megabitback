@@ -73,6 +73,14 @@ class User
     {
         $sqlQuery = "SELECT id, email,created_at FROM " . $this->db_table;
 
+        if (isset($attrs['ids'])) {
+            $numbers = implode(',', $attrs['ids']);
+
+            $sqlQuery .= " WHERE id IN ($numbers)";
+
+            return $sqlQuery;
+        }
+
         if (isset($attrs['email']) || isset($attrs['ext'])) {
             $sqlQuery .= " WHERE ";
         }
