@@ -3,7 +3,7 @@ class Database {
     private $host = "127.0.0.1";
     private $database_name = "megabit";
     private $username = "root";
-    private $password = "PASSWORD";
+    private $password = "password";
 
     public $conn;
 
