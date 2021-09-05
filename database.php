@@ -2,7 +2,7 @@
 class Database {
     private $host = "127.0.0.1";
     private $database_name = "megabit";
-    private $username = "root";
+    private $username = "yernar";
     private $password = "password";
 
     public $conn;
