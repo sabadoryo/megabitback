@@ -17,7 +17,7 @@ $data = json_decode(file_get_contents("php://input"));
 
 $item->id = $data->id;
 
-if($item->deleteEmployee()){
+if($item->deleteUser()){
     $data = [
       'status' => '200',
       'message' => 'deleted'
